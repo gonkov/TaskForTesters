@@ -17,7 +17,7 @@ namespace TaskForTesters
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            // очень ценный коммент
+            // очень ценный коммент // да-да , спасибо
         }
     }
 }
