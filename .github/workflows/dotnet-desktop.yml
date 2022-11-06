@@ -113,3 +113,14 @@ jobs:
       with:
         name: .exe
         path: D:\a\TaskForTesters\TaskForTesters\TaskForTesters\bin\Release\
+
+
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        #repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: D:\a\TaskForTesters\TaskForTesters\TaskForTesters\bin\Release\TaskForTesters.exe
+        asset_name: ExecutableFile
+        tag: ${{ github.ref }}
+        overwrite: true
+        body: "This is my release text"
