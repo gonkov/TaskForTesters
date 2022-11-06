@@ -40,9 +40,8 @@ name: .NET Core Desktop
 
 on:
   push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+    tags:
+      - '*'
 
 jobs:
 
@@ -121,6 +120,6 @@ jobs:
         #repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: D:\a\TaskForTesters\TaskForTesters\TaskForTesters\bin\Release\TaskForTesters.exe
         asset_name: ExecutableFile.exe
-        tag: v1.0.1
+        tag: ${{ github.ref }}
         overwrite: true
         body: "This is my release text"
