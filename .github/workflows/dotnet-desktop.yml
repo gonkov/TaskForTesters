@@ -119,7 +119,7 @@ jobs:
       with:
         #repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: D:\a\TaskForTesters\TaskForTesters\TaskForTesters\bin\Release\TaskForTesters.exe
-        asset_name: ExecutableFile.exe
+        asset_name: ExecutableFile-${{ github.ref }}.exe
         tag: ${{ github.ref }}
         overwrite: true
         body: "This is my release text"
