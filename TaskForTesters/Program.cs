@@ -18,6 +18,7 @@ namespace TaskForTesters
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             // очень ценный коммент // да-да , спасибо
+            // еще коммент
         }
     }
 }
